@@ -74,14 +74,9 @@ public_release/
    ```bash
    export PWOPSD_TRAIN_DATASET="open-thoughts/OpenThoughts-Math-30K"  # default
    ```
-   `open-thoughts/OpenThoughts-Math-30K` is the gated subset used to
-   produce the paper numbers; access can be requested on its Hugging
-   Face dataset page. Reproducers without access can point
-   `PWOPSD_TRAIN_DATASET` at any Hugging Face dataset whose train split
-   exposes string `problem` and `solution` columns (for example the
-   public community port `akahana/OpenThoughts-114k-math`); the trainer
-   reads only those two columns and treats the dataset choice as a
-   black box.
+   The trainer reads only the `problem` and `solution` string columns
+   from the dataset's train split, so any Hugging Face dataset that
+   exposes those two columns can be plugged in via `PWOPSD_TRAIN_DATASET`.
 4. (Optional) For HMMT February 2025 evaluation, point at a local parquet
    derived from the MathArena `hmmt_feb_2025` release:
    ```bash
