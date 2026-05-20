@@ -7,11 +7,11 @@ Official code release for the paper
 > Xiaogeng Liu, Xinyan Wang, Yingzi Ma, Yechao Zhang, Chaowei Xiao.
 
 This repository reproduces the four training methods (OPSD, EOPD, REOPOLD,
-PW-OPSD) and the 38k-token reasoning evaluation suite (MATH-500,
+PW-OPSD) and the long-context reasoning evaluation suite (MATH-500,
 AIME 2024, AIME 2025, HMMT 2025) on three base models: Qwen3-4B,
 DeepSeek-R1-Distill-Llama-8B, and Olmo-3-7B-Think.
 
-## Main results (Avg@12, 38k-token regime, 3 evaluation seeds)
+## Main results (Avg@12, maximum generation length 38,912 tokens, 3 evaluation seeds)
 
 Entries report mean ± across-seed sample standard deviation over three
 evaluation seeds. The `Avg@12` column is the equal-weight mean of the
@@ -162,7 +162,7 @@ detects an unclosed trailing `<think>` and appends `</think>`,
 restoring the intended `enable_thinking=False` semantics. The patch is
 a no-op for templates (e.g. Qwen3-4B base) that already honor the flag.
 
-## Evaluation (38k-token regime, three random seeds)
+## Evaluation (maximum generation length 38,912 tokens, three random seeds)
 
 ```bash
 # Usage: run_eval.sh <method_name> <dataset> [tp] [seed]
