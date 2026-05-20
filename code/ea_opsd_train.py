@@ -241,7 +241,7 @@ if __name__ == "__main__":
     ################
     training_args.presence_penalty = script_args.presence_penalty
 
-    dataset_id = os.environ.get("PWOPSD_TRAIN_DATASET", "open-thoughts/OpenThoughts-Math-30K")
+    dataset_id = os.environ.get("PWOPSD_TRAIN_DATASET", "siyanzhao/Openthoughts_math_30k_opsd")
     dataset = load_dataset(dataset_id)
     train_dataset = dataset["train"]
 

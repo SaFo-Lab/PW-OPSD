@@ -72,7 +72,7 @@ public_release/
    nor `WANDB_MODE=offline|disabled` is set.
 3. (Optional) Override the training dataset:
    ```bash
-   export PWOPSD_TRAIN_DATASET="open-thoughts/OpenThoughts-Math-30K"  # default
+   export PWOPSD_TRAIN_DATASET="siyanzhao/Openthoughts_math_30k_opsd"  # default
    ```
    The trainer reads only the `problem` and `solution` string columns
    from the dataset's train split, so any Hugging Face dataset that
