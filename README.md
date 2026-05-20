@@ -46,7 +46,7 @@ delivers the highest Avg@12 among the four compared methods.
 |------------|-----------------|-------------------------------------------------------------|
 | OPSD       | `opsd`          | Uniform forward-KL self-distillation (Zhao et al., 2026).   |
 | EOPD       | `eopd`          | Entropy-conditioned RKL/FKL mixture (Jin et al., 2026).     |
-| REOPOLD    | `reopold`       | Relaxed on-policy distillation, policy-gradient form.       |
+| REOPOLD    | `reopold`       | Relaxed on-policy distillation, policy-gradient form (Ko et al., 2026). |
 | PW-OPSD    | `pwopsd`        | **Ours** — position-weighted FKL with per-sequence reduction. |
 
 ## Repository layout
