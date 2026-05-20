@@ -123,11 +123,8 @@ optimizer steps with a save every 25 steps. *The launchers merge and
 evaluate `checkpoint-100`* — the paper protocol selects the step-100
 snapshot for all reported numbers. The per-GPU batch / gradient-accumulation
 split is chosen per base-model size (Qwen3-4B uses `bs=4 x ga=2`, DSR1-L8B
-and Olmo-3-7B-Think use `bs=2 x ga=4`). The vLLM colocate-mode KV-cache
-fraction is set per model (Qwen3-4B `0.40`, DSR1-L8B `0.30`, Olmo-Think
-`0.55`) so that model weights, vLLM KV cache, and training-side activations
-all fit on a single 80GB H100 under bf16 with gradient checkpointing.
-The Moderate position schedule itself is identical across the three models.
+and Olmo-3-7B-Think use `bs=2 x ga=4`). The Moderate position schedule
+itself is identical across the three models.
 
 ```bash
 # Qwen3-4B base
@@ -219,11 +216,7 @@ described above.
 
 ## Hardware
 
-All paper experiments use 4×H100 80GB. The Qwen3-4B training launchers
-target `vllm_gpu_memory_utilization=0.40`; the larger 7B/8B launchers
-relax to `0.30` (DSR1-L8B) and `0.55` (Olmo-Think) so that the model
-weights, vLLM KV cache, and training-side activations all fit on a
-single 80GB device under bf16 + gradient checkpointing.
+All paper experiments use 4×H100 80GB.
 
 ## License
 
