@@ -227,5 +227,13 @@ licenses as declared on Hugging Face and GitHub.
 ## Citation
 
 ```bibtex
-TBD
+@misc{liu2026teachertokensreliablepositionweighted,
+      title={When Are Teacher Tokens Reliable? Position-Weighted On-Policy Self-Distillation for Reasoning}, 
+      author={Xiaogeng Liu and Xinyan Wang and Yingzi Ma and Yechao Zhang and Chaowei Xiao},
+      year={2026},
+      eprint={2605.21606},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2605.21606}, 
+}
 ```
