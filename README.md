@@ -1,5 +1,7 @@
 # PW-OPSD: Position-Weighted On-Policy Self-Distillation for Reasoning
 
+[![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/2605.21606)
+
 Official code release for the paper
 
 > **When Are Teacher Tokens Reliable? Position-Weighted On-Policy
