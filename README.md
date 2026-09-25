@@ -13,6 +13,10 @@ PW-OPSD) and the long-context reasoning evaluation suite (MATH-500,
 AIME 2024, AIME 2025, HMMT 2025) on three base models: Qwen3-4B,
 DeepSeek-R1-Distill-Llama-8B, and Olmo-3-7B-Think.
 
+## News
+
+**[2026/09]** PW-OPSD has been accepted to **NeurIPS 2026**!
+
 ## Main results (Avg@12, maximum generation length 38,912 tokens, 3 evaluation seeds)
 
 Entries report mean ± across-seed sample standard deviation over three
